@@ -4,23 +4,22 @@ package ticketeria;
 public class Ingresso{
     
     //Interações cliente - ingresso 
-    String nomeCliente;
+    String cpf;
     String tipo;
     int lugar;
     
     //Preços
     double precoMeia = 8.50;
     double precoInteira = 17; 
-    double codigoCompra;
     
     //compra de ingresso
-    public void comprarIngresso(String cliente,Sessao sessao,int lugar, boolean inteiraOUmeia){
+    public void comprarIngresso(String cpf,Sessao sessao,int lugar, boolean inteiraOUmeia){
         
-        nomeCliente = cliente;
+        this.cpf = cpf;
         this.lugar = lugar;
         
         if( sessao.disponivel == true){
-        sessao.registrarAssento(lugar, cliente);
+        sessao.registrarAssento(lugar, cpf);
         
         
         if(inteiraOUmeia == true){

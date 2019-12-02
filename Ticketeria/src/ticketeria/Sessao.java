@@ -14,7 +14,7 @@ public class Sessao{
     boolean disponivel;
     
     boolean dispAssentos[];
-    String pessoasSessao[];
+    String cpfSessao[];
     
     
     public void criarSessao(String nome,double horarioComeco,int capacidade ){
@@ -39,10 +39,10 @@ public class Sessao{
         
     }
     
-    public void registrarAssento(int lugar, String nome ){
+    public void registrarAssento(int lugar, String cpf ){
         for(int i = 1; i > capacidade; ){
             dispAssentos[i] = false;
-            pessoasSessao[i] = nome;
+            cpfSessao[i] = cpf;
         }
     }
     
