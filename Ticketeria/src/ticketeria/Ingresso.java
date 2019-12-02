@@ -9,11 +9,11 @@ public class Ingresso{
     int lugar;
     
     //Preços
-    double precoMeia = 8.50;
-    double precoInteira = 17; 
+    double precoInteira = 17;
+    double precoEspecial = 0;
     
     //compra de ingresso
-    public void comprarIngresso(String cpf,Sessao sessao,int lugar, boolean inteiraOUmeia){
+    public void comprarIngresso(Sessao sessao, String cpf,int lugar, boolean inteiraOUmeia){
         
         this.cpf = cpf;
         this.lugar = lugar;
@@ -34,4 +34,8 @@ public class Ingresso{
             
         }
     }
+    
+    public void getIngresso(){
+s
+    } 
 }
